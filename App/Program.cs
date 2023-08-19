@@ -16,18 +16,23 @@ namespace PayPoint_Station.App
             switch (userAction)
             {
                 case "c":
-                    Console.WriteLine("Continue");
+                   AppScreen.Login();
                     break;
                 case "a":
-                    Console.WriteLine("Crating new account");
+                    AppScreen.CreatingAccound();
                     break;
                 case "e":
-                    Console.WriteLine("exit");
+                    ExitProgram();
                     break;
                 default:
                     Console.WriteLine("Error");
                     break;
             }
+        }
+
+        static void ExitProgram()
+        {
+            Console.WriteLine("exit");
         }
     }
 }

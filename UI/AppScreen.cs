@@ -17,9 +17,25 @@ namespace PayPoint_Station.UI
             Console.WriteLine("Note: Actual ATM system will accept and validate physical ATM card");
             Console.WriteLine("Mote: For Creating an Account, press 'a' to continue\n");
             Console.WriteLine("\n\nPress 'c' to continue.\n");
+            //TODO: Try catch null
             string userAction = Console.ReadLine();
 
             Program.processUserInput(userAction);
+        }
+
+        internal static void Login()
+        {
+            Console.Write("\n\nPlease enter your card number: ");
+            //TODO: Try catch null
+            string cardNumber = Console.ReadLine();
+            Console.Write("Enter your card PIN: ");
+            //TODO: Try catch null
+            string cardPin = Console.ReadLine();
+        }
+
+        internal static void CreatingAccound()
+        {
+
         }
     }
 }
