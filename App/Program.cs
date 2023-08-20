@@ -32,7 +32,7 @@ namespace PayPoint_Station.App
 
         static void ExitProgram()
         {
-            Console.WriteLine("exit");
+           Environment.Exit(0);
         }
     }
 }
