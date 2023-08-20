@@ -25,7 +25,7 @@ namespace PayPoint_Station.App
                     ExitProgram();
                     break;
                 default:
-                    Console.WriteLine("Error");
+                    Console.WriteLine("Input Error, please try again.");
                     break;
             }
         }
