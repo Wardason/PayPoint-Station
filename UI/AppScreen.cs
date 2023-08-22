@@ -35,7 +35,15 @@ namespace PayPoint_Station.UI
 
         internal static void CreatingAccound()
         {
+            Console.WriteLine("----------Creating Account----------");
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
 
+            Console.Write("Enter your birth date");
+            string birth_date = Console.ReadLine();
+
+            Console.Write("Enter your current address: ");
+            string address = Console.ReadLine();
         }
     }
 }
