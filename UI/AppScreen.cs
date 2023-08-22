@@ -44,6 +44,8 @@ namespace PayPoint_Station.UI
 
             Console.Write("Enter your current address: ");
             string address = Console.ReadLine();
+            
+            
         }
     }
 }
