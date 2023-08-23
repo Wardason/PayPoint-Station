@@ -21,6 +21,8 @@ namespace PayPoint_Station.App
                 case "a":
                     AppScreen.CreatingAccound();
                     string cardNumber = GenerateRandomCardNumber();
+                    int pinNumber = generateCardPin();
+                    Console.WriteLine(pinNumber);
                     Console.WriteLine(cardNumber);
                     break;
                 case "e":
@@ -53,8 +55,9 @@ namespace PayPoint_Station.App
         return prefix;
     }
 
-        static void generateCardPin(){
-
+        static int generateCardPin(){
+            Random random = new Random();
+            return random.Next(1000, 10000);
         }
     }
 }
