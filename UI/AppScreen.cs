@@ -41,6 +41,15 @@ namespace PayPoint_Station.UI
 
             Console.Write("Enter your birth date: ");
             string birth_date = Console.ReadLine();
+            if (Program.IsValidDate(birth_date, "dd.MM.yyyy"))
+        {
+            Console.WriteLine("Correct");
+        }
+        else
+        {
+            Console.WriteLine("Error");
+            //TODO ASK AGAIN 
+        }
 
             Console.Write("Enter your current address: ");
             string address = Console.ReadLine();

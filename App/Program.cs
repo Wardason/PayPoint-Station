@@ -59,5 +59,11 @@ namespace PayPoint_Station.App
             Random random = new Random();
             return random.Next(1000, 10000);
         }
+
+        internal static bool IsValidDate(string dateStr, string format)
+    {
+        DateTime result;
+        return DateTime.TryParseExact(dateStr, format, null, System.Globalization.DateTimeStyles.None, out result);
+    }
     }
 }
